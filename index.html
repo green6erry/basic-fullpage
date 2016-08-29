@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>J.Kinney Photography</title>
+	<meta name="author" content="Amanda Greenberry Brown" />
+	<meta name="description" content="fullPage fixed full-screen backgrounds sa" />
+	<meta name="keywords"  content="photography,weddings,climbing,climbers,fullpage,jquery,screen,fixed,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: 'Oswald';
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_trees.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section1{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_face.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section2{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_eggs.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section3{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_hannah.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section4{
+		background: #000 url(./imgs/jkin_walk.jpg) center no-repeat;
+		background-size: contain;
+		padding: 6% 0 0 0;
+	}
+	#section5{
+		background: #000 url(./imgs/jkin_eric.jpg) center no-repeat;
+		background-size: contain;
+		padding: 6% 0 0 0;
+	}
+	#section6{
+		background: #000 url(./imgs/jkin_nate.jpg) center no-repeat;
+		background-size: contain;
+		padding: 6% 0 0 0;
+	}
+	#section7{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_wedding.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section8{
+		padding: 6% 0 0 0;
+		background: #000 url(./imgs/jkin_team.jpg) center no-repeat;
+		background-size: contain;
+	}
+	#section9{
+		padding: 6% 0 0 0;
+		background: #fff url(./imgs/jkin_manda.jpg) center no-repeat;
+		background-size: contain;
+	}
+
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="./jquery.fullPage.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				
+
+				css3:false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+    <input type='checkbox' id='sideToggle1' hidden>
+    <input type='checkbox' id='sideToggle2' hidden>
+
+    <aside class='sideMenu right'>
+      <h2>Jeremy Kinney Photography</h2>
+      <ul>
+        <li><a href='#' data-value='photos'>Photos</a></li>
+        <li><a href='#' data-value='about'>About</a></li>
+        <li><a href='#' data-value='contact'>Contact</a></li>
+      </ul>
+    </aside>
+
+
+
+    <div id='contentWrap'> 
+      <div>
+        <label class='menuBtn linesBtn' for='sideToggle2'>&minus;</label>
+        <!-- <label class='menuBtn plusBtn' for='sideToggle1'>&plus;</label> -->
+      </div>
+
+      <div id="pageContent">
+
+
+
+
+<div id="fullpage">
+	<div class="section">
+		<div class='slide' id="section0"></div>
+		<div class="slide" id="section1"></div>
+		<div class="slide" id="section2"></div>
+		<div class="slide" id="section3"></div>
+		<div class="slide" id="section4"></div>
+		<div class="slide" id="section5"></div>
+		<div class="slide" id="section6"></div>
+		<div class="slide" id="section7"></div>
+		<div class="slide" id="section8"></div>
+		<div class="slide" id="section9"></div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
